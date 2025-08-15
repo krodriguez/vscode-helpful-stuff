@@ -1,0 +1,133 @@
+{
+  "name": "Tron Legacy",
+  "type": "dark",
+  "colors": {
+    // ---- Base Colors ----
+    "editor.background": "#0C0C0C", // The dark, empty space of the grid
+    "editor.foreground": "#E0E0E0", // The main text, a neutral off-white
+    "editorCursor.foreground": "#00FFFF", // The electric cyan cursor
+    "terminal.foreground": "#E0E0E0",
+    "terminal.background": "#0C0C0C",
+    "activityBar.background": "#050B12", // Very dark blue for the sidebar
+    "sideBar.background": "#0F1A2A", // Darker blue for the file explorer
+    "editorGroupHeader.tabsBackground": "#050B12", // Dark blue for the tab bar
+    "tab.inactiveBackground": "#0F1A2A",
+    "tab.activeBackground": "#0C0C0C",
+    "tab.activeBorder": "#00FFFF", // Cyan border on the active tab
+    "statusBar.background": "#050B12",
+    "statusBar.foreground": "#C0C0C0",
+    "statusBar.noFolderBackground": "#0F1A2A",
+
+    // ---- Editor Colors ----
+    "editor.selectionBackground": "#00FFFF55", // A semi-transparent cyan highlight
+    "editor.lineHighlightBackground": "#00336633", // A subtle blue glow for the current line
+    "editorLineNumber.foreground": "#505050", // Dim, subtle line numbers
+    "editor.wordHighlightBackground": "#FF990033", // Orange glow for highlighted words
+    "editorWhitespace.foreground": "#202020", // Very subtle whitespace characters
+
+    // ---- UI Component Colors ----
+    "badge.background": "#00FFFF", // Cyan badges, like for notification count
+    "badge.foreground": "#000000",
+    "button.background": "#0055AA", // Blue buttons
+    "button.foreground": "#E0E0E0",
+    "input.background": "#1A2E44", // Dark blue input fields
+    "list.hoverBackground": "#00336633", // Hover color for lists
+    "list.activeSelectionBackground": "#0055AA",
+    "scrollbar.shadow": "#000000",
+    "scrollbarSlider.background": "#2E476088",
+    "scrollbarSlider.hoverBackground": "#3B5A7988",
+
+    // ---- High-level Syntax Highlighting ----
+    "editor.findMatchBackground": "#00FFC244", // Highlight color for find matches
+    "editor.findMatchHighlightBackground": "#FF990044", // More subtle highlight for other matches
+    "diffEditor.insertedTextBackground": "#00FFC233", // Tron-green for inserted text
+    "diffEditor.removedTextBackground": "#FF005533", // Tron-red for removed text
+    "errorForeground": "#FF0055", // Tron-red for errors
+    "editorWarning.foreground": "#FF9900" // Tron-orange for warnings
+  },
+  "tokenColors": [
+    // ---- Syntax Highlighting ----
+    {
+      "scope": [
+        "comment" // Comments are a neutral gray, fading into the background
+      ],
+      "settings": {
+        "foreground": "#6A6A6A"
+      }
+    },
+    {
+      "scope": [
+        "string" // Strings are a bright, electric green
+      ],
+      "settings": {
+        "foreground": "#00FFC2"
+      }
+    },
+    {
+      "scope": [
+        "keyword.control", // Keywords like `if`, `for`, `return` are a strong blue
+        "keyword.operator"
+      ],
+      "settings": {
+        "foreground": "#00AAFF"
+      }
+    },
+    {
+      "scope": [
+        "storage.type",
+        "storage.modifier",
+        "keyword"
+      ],
+      "settings": {
+        "foreground": "#00FFFF" // Strong cyan for types and class names
+      }
+    },
+    {
+      "scope": [
+        "variable.parameter",
+        "variable.other"
+      ],
+      "settings": {
+        "foreground": "#E0E0E0" // Main text color for variables
+      }
+    },
+    {
+      "scope": [
+        "entity.name.function",
+        "support.function"
+      ],
+      "settings": {
+        "foreground": "#00FFC2" // Functions and methods are a vibrant cyan
+      }
+    },
+    {
+      "scope": [
+        "entity.name.tag", // HTML/XML tags
+        "support.class" // Class names
+      ],
+      "settings": {
+        "foreground": "#00AAFF"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.tag",
+        "punctuation.definition.string",
+        "punctuation.definition.array",
+        "punctuation.definition.block"
+      ],
+      "settings": {
+        "foreground": "#00AAFF" // Punctuation like braces and brackets
+      }
+    },
+    {
+      "scope": [
+        "constant.numeric", // Numbers are a light blue
+        "constant.language" // Null, true, false
+      ],
+      "settings": {
+        "foreground": "#00BFFF"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "tron-legacy",
+  "displayName": "Tron Legacy Theme",
+  "description": "Tron Legacy Based dark theme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.103.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krodriguez/vscode-helpful-stuff.git"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Tron Legacy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Tron Legacy-color-theme.json"
+      }
+    ]
+  }
+}
